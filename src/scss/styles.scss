@@ -1,0 +1,23 @@
+.scroll {
+    $height: 350px;
+
+    width: 100%;
+    height: $height;
+    
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 250px;
+        position: absolute;
+        left: 100%;
+        animation: AutoRun var(--time) linear infinite;
+        animation-delay: calc(var(--time) / var(--quantity) * var(--index) - 16S);
+    }
+}
+
+@keyframes AutoRun {
+    to {
+        left: -250px
+    }
+}

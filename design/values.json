@@ -7,6 +7,20 @@
         "secondary": {
             "rgb": [186, 222, 77],
             "hex": "#bade4d" 
+        },
+        "text": {
+            "primary": {
+                "rgb": [0, 0, 0],
+                "hex": "#000000"
+            },
+            "secondary": {
+                "rgb": [255, 255, 255],
+                "hex": "#ffffff"
+            }
+        },
+        "background": {
+            "rgb": [29, 29, 28],
+            "hex": "#1d1d1c"
         }
     }
 }
