@@ -1,0 +1,12 @@
+{
+    "colours": {
+        "primary": {
+            "rgb": [1, 75, 65],
+            "hex": "#014b3e"
+        },
+        "secondary": {
+            "rgb": [186, 222, 77],
+            "hex": "#bade4d" 
+        }
+    }
+}
