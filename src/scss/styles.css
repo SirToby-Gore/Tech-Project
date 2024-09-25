@@ -1,11 +1,33 @@
+.banner {
+  background-color: #1d1d1c;
+  padding: 0.3rem;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+.banner h1 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+.banner h1 span.and {
+  color: #bade4d;
+}
+.banner h2 {
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
 .scroll {
   width: 100%;
-  height: 350px;
+  height: 22rem;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .scroll img {
-  width: 250px;
+  width: 15.6rem;
   position: absolute;
   left: 100%;
   animation: AutoRun var(--time) linear infinite;
@@ -14,6 +36,6 @@
 
 @keyframes AutoRun {
   to {
-    left: -250px;
+    left: -15.6rem;
   }
 }/*# sourceMappingURL=styles.css.map */

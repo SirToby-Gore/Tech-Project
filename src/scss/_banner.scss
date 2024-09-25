@@ -1,0 +1,22 @@
+.banner {
+    background-color: map-get($colours, background);
+    padding: 0.3rem;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+
+    h1 {
+        color: map-get($colours, sec-txt);
+        font-size: 3rem;
+
+        span.and{
+            color: map-get($colours, secondary);
+        }
+    }    
+    
+    h2 {
+        color: map-get($colours, sec-txt);
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+}

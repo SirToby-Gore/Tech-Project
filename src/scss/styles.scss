@@ -1,23 +1,6 @@
-.scroll {
-    $height: 350px;
+@use './colours' as *;
 
-    width: 100%;
-    height: $height;
-    
-    overflow: hidden;
-    position: relative;
+@import './banner';
 
-    img {
-        width: 250px;
-        position: absolute;
-        left: 100%;
-        animation: AutoRun var(--time) linear infinite;
-        animation-delay: calc(var(--time) / var(--quantity) * var(--index) - 16S);
-    }
-}
+@import './scrolling';
 
-@keyframes AutoRun {
-    to {
-        left: -250px
-    }
-}

@@ -1,24 +1,7 @@
 $colours: (
-    primary: (
-        rgba(1, 75, 65, 1),
-        hex: #014b3e
-    ),
-    secondary: (
-        rgba(186, 222, 77, 1),
-        hex: #bade4d 
-    ),
-    text: (
-        primary: (
-            rgba(0, 0, 0, 1),
-            hex: #000000
-        ),
-        secondary: (
-            rgba(255, 255, 255, 1),
-            hex: #ffffff
-        )
-    ),
-    background: (
-        rgba(29, 29, 28, 1),
-        hex: #1d1d1c
-    )
+    primary: #014b3e,
+    secondary: #bade4d, 
+    pri-txt: #000000,
+    sec-txt: #ffffff,
+    background: #1d1d1c,
 )
