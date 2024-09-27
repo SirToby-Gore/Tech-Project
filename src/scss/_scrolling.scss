@@ -1,5 +1,9 @@
 .scroll{
+    $img-width: 15.6rem;
     $height: 22rem; 
+
+    $time: 9s;
+    $quantity: 5;
 
     width: 100%; 
     height: $height;
@@ -11,11 +15,13 @@
     align-items: center;
 
     img {
-        width: 15.6rem;
+        width: $img-width;
 
         position: absolute; 
         left: 100%; 
-
+        
+        animation: AutoRun $time linear infinite; 
+        
         /*
         * this calculates the delay for each image
         * time / (quantity * index) - time
@@ -26,14 +32,18 @@
         * index
         *   - the index of each image
         */
-        animation-delay: calc(var(--time) / var(--quantity) * var(--index) - var(--time));
-        animation: AutoRun var(--time) linear infinite; 
+        
+        @for $index from 1 through $quantity {
+            &#img-#{$index} {
+                animation-delay: ( math.div($time, $quantity) * $index - $time );
+            }
+        }
     }
-}
 
-@keyframes AutoRun {
-    to {
-        left: -15.6rem
+    
+    @keyframes AutoRun {
+        to {
+            left: -$img-width;
+        }
     }
-}
-
+}    

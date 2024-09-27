@@ -3,11 +3,12 @@
     padding: 0.3rem;
 
     h1 {
-        color: map-get($colours, sec-txt);
+        padding-left: 1rem;
+        color: light-dark(map-get($colours, sec-txt), map-get($colours, sec-txt));
         font-size: 3rem;
 
         span.and{
-            color: map-get($colours, secondary);
+            color: light-dark(map-get($colours, primary), map-get($colours, secondary));
         }
     }    
     

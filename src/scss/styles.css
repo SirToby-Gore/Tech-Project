@@ -3,11 +3,12 @@
   padding: 0.3rem;
 }
 .banner h1 {
-  color: #ffffff;
+  padding-left: 1rem;
+  color: light-dark(#ffffff, #ffffff);
   font-size: 3rem;
 }
 .banner h1 span.and {
-  color: #bade4d;
+  color: light-dark(#014b3e, #bade4d);
 }
 .banner h2 {
   color: #ffffff;
@@ -27,6 +28,7 @@
   width: 15.6rem;
   position: absolute;
   left: 100%;
+  animation: AutoRun 9s linear infinite;
   /*
   * this calculates the delay for each image
   * time / (quantity * index) - time
@@ -37,15 +39,28 @@
   * index
   *   - the index of each image
   */
-  animation-delay: calc(var(--time) / var(--quantity) * var(--index) - var(--time));
-  animation: AutoRun var(--time) linear infinite;
 }
-
+.scroll img#img-1 {
+  animation-delay: -7.2s;
+}
+.scroll img#img-2 {
+  animation-delay: -5.4s;
+}
+.scroll img#img-3 {
+  animation-delay: -3.6s;
+}
+.scroll img#img-4 {
+  animation-delay: -1.8s;
+}
+.scroll img#img-5 {
+  animation-delay: 0s;
+}
 @keyframes AutoRun {
   to {
     left: -15.6rem;
   }
 }
+
 :root {
   color-scheme: light dark;
 }

@@ -1,13 +1,18 @@
-@use './colours' as *;
+@use './colours' as *; // imports the colours at the top and makes them available to all following imports
 
-@import './banner';
+@use './variables' as *; // imports the variables at the top and makes them available to all following imports
 
-@import './scrolling';
+@use 'sass:math'; // allows us to use math functions
+
+@import './banner'; // styles for the banner at the top of page
+
+@import './scrolling'; // styles for the scrolling animation below the banner at top of page
 
 :root {
-    color-scheme: light dark;
+    color-scheme: light dark; // sets light/dark mode for the website with the function light-dark(clr-1, clr-2) 
 }
 
 body {
     background-color: light-dark(white, map-get($colours, background));
 }   
+
