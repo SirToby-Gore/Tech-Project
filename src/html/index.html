@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../scss/styles.css">
 
+    <script src="../JS/scripts.js"></script>
+
     <link rel="icon" href="../../assets/images/favicon.png">
 </head>
 <body>
@@ -14,15 +16,46 @@
         <h1>M<span class="and">&</span>S</h1>
         <h2>Smart Tin Opener</h2>
     </div>
+
     <nav>
-        <div class="navs">
-        </div>
+        <a href="#">back to top</a>
+        <a href="#sign-up">sign up</a>
+        <a href="#find-out-more">find out more</a>
     </nav>
-    <div class="scroll" style="--time: 9s; --quantity: 4"">
-        <img src="../../assets/tin-opener/img-1.jpeg" alt="image 1" style="--index: 1;">
-        <img src="../../assets/tin-opener/img-2.jpg" alt="image 2" style="--index: 2;">
-        <img src="../../assets/tin-opener/img-3.jpg" alt="image 3" style="--index: 3;">
-        <img src="../../assets/tin-opener/img-4.jpg" alt="image 4" style="--index: 4;">
+
+    <div class="scroll" style="--time: 9s; --quantity: 5"">
+        <img src="../../assets/tin-opener/img-1.png" alt="" style="--index: 1">
+        <img src="../../assets/tin-opener/img-2.png" alt="" style="--index: 2">
+        <img src="../../assets/tin-opener/img-3.png" alt="" style="--index: 3">
+        <img src="../../assets/tin-opener/img-4.png" alt="" style="--index: 4">
+        <img src="../../assets/tin-opener/img-5.png" alt="" style="--index: 5">
     </div>
+
+    <div id="sign-up">
+        <h1>Sign up</h1>z
+        
+        <form>
+            <input type="text" placeholder="first name" id="first-name">
+            <input type="text" placeholder="sir name" id="sir-name">
+            <input type="email" placeholder="email" id="email">
+            <input type="number" placeholder="phone number" id="phone-number">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    
+    <div id="find-out-more">
+        <h1>Find out more</h1>
+        
+        <details id="what-it-can-do">
+            <summary>What it can do</summary>
+            <ul>
+                <li>It can open a can</li>
+                <li>It can't not open can't can</li>
+                <li>When it works it can open cans</li>
+                <li>If it breaks it's a can't opener</li>
+            </ul>
+        </details>
+    </div>
+
 </body>
 </html>

@@ -4,3 +4,10 @@
 
 @import './scrolling';
 
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: light-dark(white, map-get($colours, background));
+}   

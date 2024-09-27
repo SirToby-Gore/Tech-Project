@@ -1,9 +1,6 @@
 .banner {
-    background-color: map-get($colours, background);
+    background-color: light-dark(map-get($colours, background), map-get($colours, primary));   
     padding: 0.3rem;
-    position: absolute;
-    top: 0%;
-    width: 100%;
 
     h1 {
         color: map-get($colours, sec-txt);

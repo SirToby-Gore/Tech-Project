@@ -31,3 +31,10 @@ this holds audio for the project
 
 #### `videos`
 this holds videos for the project
+
+# Page lay out
+
+* The top banner has the title and says what the product is
+
+* There is scrolling images of the products
+

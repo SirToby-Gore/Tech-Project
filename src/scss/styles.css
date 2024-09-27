@@ -1,9 +1,6 @@
 .banner {
-  background-color: #1d1d1c;
+  background-color: light-dark(#1d1d1c, #014b3e);
   padding: 0.3rem;
-  position: absolute;
-  top: 0%;
-  width: 100%;
 }
 .banner h1 {
   color: #ffffff;
@@ -30,12 +27,29 @@
   width: 15.6rem;
   position: absolute;
   left: 100%;
+  /*
+  * this calculates the delay for each image
+  * time / (quantity * index) - time
+  * time
+  *   - the length of the animation
+  * quantity
+  *   - the number of images
+  * index
+  *   - the index of each image
+  */
+  animation-delay: calc(var(--time) / var(--quantity) * var(--index) - var(--time));
   animation: AutoRun var(--time) linear infinite;
-  animation-delay: calc(var(--time) / var(--quantity) * var(--index) - 16S);
 }
 
 @keyframes AutoRun {
   to {
     left: -15.6rem;
   }
+}
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: light-dark(white, #1d1d1c);
 }/*# sourceMappingURL=styles.css.map */

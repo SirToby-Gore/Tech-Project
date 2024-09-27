@@ -1,7 +1,21 @@
+// this is the variable that holds all the colours
+// it is a map so that we can use the keys to access the colours
+// the keys are descriptive of what the colours are used for
+// the values are the actual colours as hex codes
 $colours: (
+    // primary colour
+    // used for the main header and buttons
     primary: #014b3e,
-    secondary: #bade4d, 
+    // secondary colour
+    // used for the subheader and the background of the main section
+    secondary: #bade4d,
+    // primary text colour
+    // used for the main text
     pri-txt: #000000,
+    // secondary text colour
+    // used for sub-headers and subtext
     sec-txt: #ffffff,
+    // background colour
+    // used for any element that is not the background
     background: #1d1d1c,
-)
+);
