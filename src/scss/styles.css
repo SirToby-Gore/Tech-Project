@@ -1,31 +1,41 @@
+:root {
+  color-scheme: light dark;
+}
+
+/**
+ * @function anchor
+ * @description
+ * This function is used to style the `anchor` tag
+ * This is to be with in the `anchor` tag
+ */
 .banner {
-  background-color: light-dark(#1d1d1c, #014b3e);
+  background-color: light-dark(#000, #014b3e);
   padding: 0.3rem;
 }
 .banner h1 {
   padding-left: 1rem;
-  color: light-dark(#ffffff, #ffffff);
+  color: #fff;
   font-size: 3rem;
 }
 .banner h1 span.and {
-  color: light-dark(#014b3e, #bade4d);
+  color: #bade4d;
 }
 .banner h2 {
-  color: #ffffff;
+  color: #fff;
   padding: 2rem;
   font-size: 1.5rem;
 }
 
 .scroll {
   width: 100%;
-  height: 22rem;
+  height: 16vw;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
 }
 .scroll img {
-  width: 15.6rem;
+  width: 16vw;
   position: absolute;
   left: 100%;
   animation: AutoRun 9s linear infinite;
@@ -40,6 +50,9 @@
   *   - the index of each image
   */
 }
+.scroll img#img-0 {
+  animation-delay: -9s;
+}
 .scroll img#img-1 {
   animation-delay: -7.2s;
 }
@@ -52,19 +65,149 @@
 .scroll img#img-4 {
   animation-delay: -1.8s;
 }
-.scroll img#img-5 {
-  animation-delay: 0s;
-}
 @keyframes AutoRun {
   to {
-    left: -15.6rem;
+    left: -16vw;
   }
 }
 
-:root {
-  color-scheme: light dark;
+#sign-up {
+  background-color: rgba(255, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1.9rem);
+          backdrop-filter: blur(1.9rem);
+  border-radius: 0.62rem;
+  padding: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: light-dark(#000, #014b3e);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sign-up:focus-within {
+  border: grey solid 0.2rem;
+}
+#sign-up h1 {
+  display: block;
+  font-size: 3rem;
+  color: #fff;
+}
+#sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30rem;
+}
+#sign-up form input[type=submit] {
+  background-color: #6ade4d;
+}
+#sign-up form #phone-number::before {
+  content: "(0)";
+  position: absolute;
+  left: 0.5rem;
+  color: red;
+  font-size: xx-large;
+}
+#sign-up form:focus-within {
+  border: grey solid 0.2rem;
+}
+#sign-up form:invalid input[type=submit] {
+  background-color: #ffae00;
+}
+
+#find-out-more {
+  background-color: rgba(255, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1.9rem);
+          backdrop-filter: blur(1.9rem);
+  border-radius: 0.62rem;
+  padding: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: light-dark(#000, #014b3e);
+}
+#find-out-more:focus-within {
+  border: grey solid 0.2rem;
+}
+#find-out-more h1 {
+  display: block;
+  font-size: 3rem;
+  color: #fff;
+}
+#find-out-more details summary {
+  color: #fff;
+  font-size: 2rem;
+}
+#find-out-more details ul {
+  color: #fff;
+}
+#find-out-more details ul li {
+  font-size: 1.5rem;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  z-index: 1;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  animation-duration: 0.5s;
+}
+#nav-bar:open {
+  background-color: red !important;
+}
+#nav-bar summary {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+}
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#nav-bar ul a {
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+#nav-bar ul a:hover {
+  color: #fff;
+}
+
+#footer {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  position: static;
+  bottom: 0%;
+  border-top-left-radius: 0.62rem;
+  border-top-right-radius: 0.62rem;
+}
+#footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footer ul li {
+  font-size: 1rem;
 }
 
 body {
-  background-color: light-dark(white, #1d1d1c);
+  background-color: light-dark(#fff, #1d1d1c);
 }/*# sourceMappingURL=styles.css.map */

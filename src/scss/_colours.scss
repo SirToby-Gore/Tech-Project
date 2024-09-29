@@ -2,20 +2,31 @@
 // it is a map so that we can use the keys to access the colours
 // the keys are descriptive of what the colours are used for
 // the values are the actual colours as hex codes
+// with responsive light dark mode
+:root {
+    color-scheme: light dark; // sets light/dark mode for the website with the function light-dark(clr-1, clr-2) 
+}
+
 $colours: (
     // primary colour
     // used for the main header and buttons
-    primary: #014b3e,
+    primary: light-dark(#000, #014b3e),
     // secondary colour
     // used for the subheader and the background of the main section
     secondary: #bade4d,
     // primary text colour
     // used for the main text
-    pri-txt: #000000,
+    pri-txt: #000,
     // secondary text colour
     // used for sub-headers and subtext
-    sec-txt: #ffffff,
+    sec-txt: #fff,
     // background colour
     // used for any element that is not the background
-    background: #1d1d1c,
+    background: light-dark(#fff, #1d1d1c),
+
+    success: #6ade4d,
+
+    warning: #ffae00,
+
+    danger: #f00,
 );

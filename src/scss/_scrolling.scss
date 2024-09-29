@@ -1,12 +1,11 @@
-.scroll{
-    $img-width: 15.6rem;
-    $height: 22rem; 
+.scroll {
+    $img-width: 16vw;
 
     $time: 9s;
     $quantity: 5;
 
     width: 100%; 
-    height: $height;
+    height: $img-width;
     
     overflow: hidden; 
     position: relative; 
@@ -16,7 +15,7 @@
 
     img {
         width: $img-width;
-
+        
         position: absolute; 
         left: 100%; 
         
@@ -33,14 +32,13 @@
         *   - the index of each image
         */
         
-        @for $index from 1 through $quantity {
+        @for $index from 0 through $quantity - 1 {
             &#img-#{$index} {
                 animation-delay: ( math.div($time, $quantity) * $index - $time );
             }
         }
     }
-
-    
+            
     @keyframes AutoRun {
         to {
             left: -$img-width;

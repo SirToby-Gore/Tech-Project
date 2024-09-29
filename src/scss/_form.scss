@@ -1,0 +1,48 @@
+#sign-up {
+    @include glassmorphism();
+
+    @include card();
+
+    background-color: map-get($colours, primary );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        display: block;
+        font-size: 3rem;
+
+        color: map-get($colours, sec-txt);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 30rem;
+
+        input[type="submit"] {
+            background-color: map-get($colours, success);
+        }
+
+        #phone-number::before {
+            content: "(0)";
+            position: absolute;
+            left: 0.5rem;
+            color: red;
+            font-size: xx-large;
+        }
+
+        &:focus-within {
+            border: grey solid 0.2rem;
+        }
+
+        &:invalid {
+            input[type="submit"] {
+                background-color: map-get($colours, warning);
+            }
+        }
+    }
+}

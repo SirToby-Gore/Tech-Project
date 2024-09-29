@@ -33,8 +33,12 @@ this holds audio for the project
 this holds videos for the project
 
 # Page lay out
-
 * The top banner has the title and says what the product is
 
 * There is scrolling images of the products
 
+* Then a sign up
+
+* Followed by a find out more
+
+* There is also a footer at the foot of the page

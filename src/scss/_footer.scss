@@ -1,0 +1,25 @@
+#footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color: map-get($colours, sec-txt);
+
+    position: static;
+    bottom: 0%;
+
+    border-top-left-radius: 0.62rem;
+    border-top-right-radius: 0.62rem;
+
+    ul {
+        list-style: none;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+            font-size: 1rem;
+        }
+    }
+}

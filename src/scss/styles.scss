@@ -4,15 +4,21 @@
 
 @use 'sass:math'; // allows us to use math functions
 
+@use './mixins' as *; // imports the mixins at the top and makes them available to all following imports
+
 @import './banner'; // styles for the banner at the top of page
 
 @import './scrolling'; // styles for the scrolling animation below the banner at top of page
 
-:root {
-    color-scheme: light dark; // sets light/dark mode for the website with the function light-dark(clr-1, clr-2) 
-}
+@import './form'; // styles for the form
+
+@import './find-out-more'; // styles for the find out more
+
+@import './nav-bar'; // styles for the nav bar
+
+@import './footer'; // styles for the footer
 
 body {
-    background-color: light-dark(white, map-get($colours, background));
+    background-color: map-get($colours, background);
 }   
 

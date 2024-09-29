@@ -1,0 +1,41 @@
+#nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 100dvh;
+    // background-color: map-get($colours, secondary);
+    z-index: 1;
+
+    padding: .5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &:open {
+        background-color: red !important;
+    }
+
+    animation-duration: .5s;
+
+    summary {
+        text-transform: uppercase;
+        color: map-get($colours, pri-txt);
+        font-size: 2rem;
+    }
+    
+    ul {
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        a {
+            @include anchor();
+        }
+    }
+}

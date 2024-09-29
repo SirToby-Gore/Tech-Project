@@ -1,0 +1,33 @@
+#find-out-more {
+    @include glassmorphism();
+
+    @include card();
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: map-get($colours, primary);
+    
+    h1 {
+        display: block;
+        font-size: 3rem;
+        color: map-get($colours, sec-txt);
+    }
+
+    details {
+        summary {
+            color: map-get($colours, sec-txt);
+            font-size: 2rem;
+        }
+
+        ul {
+            color: map-get($colours, sec-txt);
+    
+            li {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
