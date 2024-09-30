@@ -211,8 +211,4 @@
 
 body {
   background-color: light-dark(#fff, #1d1d1c);
-}
-
-:output {
-  path: "../css/styles.css";
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
 
 @use 'sass:math'; // allows us to use math functions
 
-@import './mixins/main'; // imports the mixins at the top and makes them available to all following imports
+@import 'mixins/mixins'; // imports the mixins at the top and makes them available to all following imports
 
 @import './banner'; // styles for the banner at the top of page
 
@@ -21,7 +21,3 @@
 body {
     background-color: map-get($colours, background);
 }   
-
-:output {
-    path: '../css/styles.css'
-}
