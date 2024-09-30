@@ -1,0 +1,4 @@
+@mixin glassmorphism($BG-colour:red) {
+    background-color: rgba($BG-colour, 0.2);
+    backdrop-filter: blur(1.9rem);
+}

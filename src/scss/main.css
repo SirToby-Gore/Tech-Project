@@ -8,6 +8,7 @@
  * This function is used to style the `anchor` tag
  * This is to be with in the `anchor` tag
  */
+@export anchor;
 .banner {
   background-color: light-dark(#000, #014b3e);
   padding: 0.3rem;
@@ -210,4 +211,8 @@
 
 body {
   background-color: light-dark(#fff, #1d1d1c);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+:output {
+  path: "../css/styles.css";
+}/*# sourceMappingURL=main.css.map */

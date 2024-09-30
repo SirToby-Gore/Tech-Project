@@ -1,0 +1,11 @@
+@mixin card() {
+    &:focus-within {
+        border: grey solid 0.2rem;
+    }
+    border-radius: 0.62rem;
+    
+    padding: 1.25rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

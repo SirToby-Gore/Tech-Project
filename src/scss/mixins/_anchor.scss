@@ -1,0 +1,21 @@
+/**
+ * @function anchor
+ * @description
+ * This function is used to style the `anchor` tag
+ * This is to be with in the `anchor` tag
+ */
+ @mixin anchor() {
+     &{
+         text-transform: uppercase;
+         color: map-get($colours, pri-txt);
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 0.5rem;
+        
+        &:hover {
+            color: map-get($colours, sec-txt);
+        }
+    }
+}
+
+@export anchor;
