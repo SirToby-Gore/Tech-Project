@@ -8,7 +8,6 @@
  * This function is used to style the `anchor` tag
  * This is to be with in the `anchor` tag
  */
-@export anchor;
 .banner {
   background-color: light-dark(#000, #014b3e);
   padding: 0.3rem;
@@ -155,6 +154,11 @@
   right: 0;
   height: 100dvh;
   z-index: 1;
+}
+#nav-bar:has(details:open) {
+  background-color: #bade4d;
+}
+#nav-bar details {
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -162,29 +166,26 @@
   justify-content: space-evenly;
   animation-duration: 0.5s;
 }
-#nav-bar:open {
-  background-color: red !important;
-}
-#nav-bar summary {
+#nav-bar details summary {
   text-transform: uppercase;
   color: #000;
   font-size: 2rem;
 }
-#nav-bar ul {
+#nav-bar details ul {
   list-style: none;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#nav-bar ul a {
+#nav-bar details ul a {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
   font-size: 2rem;
   padding: 0.5rem;
 }
-#nav-bar ul a:hover {
+#nav-bar details ul a:hover {
   color: #fff;
 }
 
